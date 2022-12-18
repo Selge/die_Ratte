@@ -18,9 +18,11 @@ def set_mouse_rectangle():
     witdth = int(input("Please, set the rectangle width:  "))
     height = int(input("Please, set the rectangle height:  "))
     pass
-    
-# moving mouse:
-# for i in range(10):  # range показывает количество циклов мыши
+
+def moving_mouse():
+    cycles = int(input("Please, set the number of mouse cycles:  "))
+    for i in range(cycles + 1):  # range is showing us amount of mouse cycles
+
 #     pyautogui.moveTo(100, 100, duration=0.25)  # перемещаем мышь в заданную позиицю на экране
 #     # duration - скорость перемещения. При '0' - перемещается мгновенно
 #     print(pyautogui.position())  # temporary checking command
