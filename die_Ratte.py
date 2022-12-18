@@ -21,10 +21,11 @@ def set_mouse_rectangle():
 
 def moving_mouse():
     cycles = int(input("Please, set the number of mouse cycles:  "))
-    for i in range(cycles + 1):  # range is showing us amount of mouse cycles
-
-#     pyautogui.moveTo(100, 100, duration=0.25)  # перемещаем мышь в заданную позиицю на экране
-#     # duration - скорость перемещения. При '0' - перемещается мгновенно
+    # mouse speed/ '0' turns our mouse to Übermaus with ultraspeed
+    duration = float(input("Please, set the mouse moving duration (0 - ):  "))
+    # range is showing us amount of mouse cycles
+    for i in range(cycles + 1):
+        pyautogui.moveTo(start_x, start_y, duration=duration)  # перемещаем мышь в заданную позиицю на экране
 #     print(pyautogui.position())  # temporary checking command
 #     pyautogui.moveTo(200, 100, duration=0.25)
 #     print(pyautogui.position())
