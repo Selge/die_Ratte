@@ -25,7 +25,8 @@ def moving_mouse():
     duration = float(input("Please, set the mouse moving duration (0 - ):  "))
     # range is showing us amount of mouse cycles
     for i in range(cycles + 1):
-        pyautogui.moveTo(start_x, start_y, duration=duration)  # перемещаем мышь в заданную позиицю на экране
+        #  pyautogui.moveTo(start_x, start_y, duration=duration)  # перемещаем мышь в заданную позиицю на экране
+        pyautogui.moveTo(100, 1000, duration=duration)  # перемещаем мышь в заданную позиицю на экране
 #     print(pyautogui.position())  # temporary checking command
 #     pyautogui.moveTo(200, 100, duration=0.25)
 #     print(pyautogui.position())
@@ -48,4 +49,4 @@ def moving_mouse():
 
 
 if __name__ == '__main__':
-    screen_size()
+    moving_mouse()
