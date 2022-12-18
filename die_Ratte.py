@@ -6,14 +6,20 @@ pyautogui.PAUSE = 1
 pyautogui.FAILSAFE = True
 
 
-def screen_size():
+def show_screen_size():
     print(pyautogui.size())
 
 
-# def set_screen_size():
-# # let's first keep the screen size automatic:
-#     width, height = pyautogui.size()
-# # moving mouse:
+def get_screen_size():
+    width, height = pyautogui.size()
+
+
+def set_mouse_rectangle():
+    witdth = int(input("Please, set the rectangle width:  "))
+    height = int(input("Please, set the rectangle height:  "))
+    pass
+    
+# moving mouse:
 # for i in range(10):  # range показывает количество циклов мыши
 #     pyautogui.moveTo(100, 100, duration=0.25)  # перемещаем мышь в заданную позиицю на экране
 #     # duration - скорость перемещения. При '0' - перемещается мгновенно
