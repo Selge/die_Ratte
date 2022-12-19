@@ -23,6 +23,8 @@ def moving_mouse():
     cycles = int(input("Please, set the number of mouse cycles:  "))
     # mouse speed/ '0' turns our mouse to Übermaus with ultraspeed
     duration = float(input("Please, set the mouse moving duration (0 - ):  "))
+    startpoint = int(input("Please, set up startpoint coordinates:  "))
+    endpoint = int(input("Please, set up endpoint coordinates:  "))
     # range is showing us amount of mouse cycles
     for i in range(cycles + 1):
         #  pyautogui.moveTo(start_x, start_y, duration=duration)  # перемещаем мышь в заданную позиицю на экране
