@@ -26,7 +26,7 @@ def moving_mouse():
     # range is showing us amount of mouse cycles
     for i in range(cycles + 1):
         #  pyautogui.moveTo(start_x, start_y, duration=duration)  # перемещаем мышь в заданную позиицю на экране
-        pyautogui.moveTo(100, 1000, duration=duration)  # перемещаем мышь в заданную позиицю на экране
+        pyautogui.moveTo(startpoint, endpoint, duration=duration)  # перемещаем мышь в заданную позиицю на экране
 #     print(pyautogui.position())  # temporary checking command
 #     pyautogui.moveTo(200, 100, duration=0.25)
 #     print(pyautogui.position())
