@@ -1,9 +1,19 @@
 import pyautogui
+import random
+import time
 # import gettext
 
 # Temporary debug commands:
 pyautogui.PAUSE = 1
 pyautogui.FAILSAFE = True
+
+
+def random_move():
+    while True:
+        x = random.randint(600, 700)
+        y = random.randint(200, 600)
+        pyautogui.moveTo(x, y, 0.5)
+        time.sleep(2)
 
 
 def show_screen_size():
@@ -51,4 +61,4 @@ def moving_mouse():
 
 
 if __name__ == '__main__':
-    moving_mouse()
+    random_move()
